@@ -15,5 +15,5 @@ should be able to bind multiple at once
 '''
 
 def rbind(df1, df2):
-  return pandas::concat([df1,df2])
+  return pandas::pandas.concat([df1,df2])
  
