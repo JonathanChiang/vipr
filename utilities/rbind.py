@@ -1,6 +1,3 @@
-
-import pandas as pd
-
 '''
 # https://stackoverflow.com/questions/14988480/pandas-version-of-rbind
 
@@ -14,6 +11,7 @@ only binds two dataframes for now:
 should be able to bind multiple at once
 '''
 
+import pandas as pd
 def rbind(df1, df2):
-  return pandas::pandas.concat([df1,df2])
+  return pd.concat([df1,df2])
  
