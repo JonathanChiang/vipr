@@ -11,3 +11,8 @@ test2 = pandas.DataFrame([4,2,1,3,7])
 
 
 '''
+
+def cbindR(df1, df2):
+  df3 = pd.concat([df1, df2], axis=1)
+  df3.columns = ['v0','v1'] 
+  return df3
