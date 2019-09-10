@@ -9,5 +9,11 @@ df2 = pd.DataFrame({'col1': [5,6], 'col2':[7,8]})
 print(df1)
 print(df2)
 print(pd.concat([df1, df2]))
+
+only binds two dataframes for now: 
+should be able to bind multiple at once
 '''
 
+def rbind(df1, df2):
+  return pandas::concat([df1,df2])
+ 
