@@ -9,6 +9,9 @@ print(pd.concat([df1, df2]))
 
 only binds two dataframes for now: 
 should be able to bind multiple at once
+
+pd.concat([df1, df2]) == rbind(df1, df2) 
+
 '''
 
 import pandas as pd
