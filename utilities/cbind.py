@@ -16,7 +16,11 @@ cbindR(test1,test2)
 
 '''
 
-def cbindR(df1, df2):
-  df3 = pd.concat([df1, df2], axis=1)
-  df3.columns = ['v0','v1'] 
-  return df3
+def cbindR(*dfs):
+
+    cols = sum([list(df.columns) for df in dfs], [])
+    # dfs needs to be indexed because it is a tuple of one element: a list of dataframes
+    result = pd.concat(dfs[0], axis = 1, ignore_index = True)
+    result.columns = cols
+    
+    return result
