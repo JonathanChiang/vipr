@@ -31,6 +31,7 @@ dfs = [df for i in range(10)]
 
 cbindR(dfs)
 '''
+import pandas as pd 
 
 def cbindR(*dfs):
 
